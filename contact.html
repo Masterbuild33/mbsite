@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+      body{
+          margin: 0px;
+          padding: 0px;
+          /* background: linear-gradient(to left, rgb(202, 210, 225), rgb(248, 241, 209)); */
+          background-image: url(imgs/imageg3.jpeg);
+          background-size: cover; 
+          background-position:center; 
+          background-repeat: no-repeat; 
+      }
+
+      
+      html, body {
+    overflow-x: hidden;
+}
+
+      .menu-icon{
+            display: none;
+        }
+
+        .menu{
+            display: none;
+        }
+
+      .header{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            z-index:3;
+            background-color: rgba(100, 100, 100, 0.409);
+            width: 1912px;
+            height: 120px;    
+            position: fixed;  
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184), 0 8px 15px rgba(0, 0, 0, 0.2);      
+        }
+        .opt{
+            display: flex;
+            flex-direction: row;
+            padding-left:   50px;
+            padding-right: 120px;
+            padding-top: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .tpo{
+            color:white;
+            padding-left:140px;
+            padding-right: 60px;
+            white-space: nowrap;
+            font-family: 'Nirmala UI';
+            font-size: 22px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo{
+            font-family: 'Poppins';
+            color:rgb(250, 237, 212);
+            font-size: 35px;
+            font-weight:bold ;
+            padding-left:60px;
+            padding-top: 30px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .contct{
+            margin-top: 28px;
+            padding: 15px 30px 15px 30px;
+            background-color: rgba(255, 255, 255, 0.143) ;
+            border: none;
+            text-decoration: none;
+            height: 28px;
+            transition: transform 0.3s ease;
+        }
+
+        .mesajb{
+            font-family:'Inter';
+            color:rgb(250, 237, 212);
+            font-size: 22px;
+        }
+
+        /* 1 */
+
+        .fs{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-top: 200px;  
+          padding-left: 300px;   
+        }
+
+
+        .contact{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(213, 213, 213, 0.443);
+          padding: 50px;
+          padding-top: 20px;
+          border-radius: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.487), 0 8px 15px rgba(0, 0, 0, 0.2);
+          margin-top: 40px;
+          transition: transform 0.3s ease;
+        }
+
+        .inf{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-family: 'Abhaya Libre', serif ;;
+          row-gap: 20px;
+          font-size: 40px;    
+          padding-bottom: 60px;      
+        }
+
+        .nr{
+          font-size: 25px;
+          text-decoration: none;
+        }
+
+        .nrr{
+          margin-left: 25px;
+          font-size: 25px;
+          text-decoration: none;
+          font-family: 'Inter';
+          font-weight: lighter;
+        }
+
+      
+
+
+        .fb{
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .nmfb{
+          margin-left: 10px;
+          }
+        
+
+        .adrs,.adrss{
+          font-family: 'Abhaya Libre', serif ;
+          padding-bottom: 20px;
+          font-size: 40px;
+        }
+
+
+        
+
+        .adrss , .nr , .nmfb{
+          color: rgb(44, 44, 44);
+          font-family:'Inter', serif ;
+          font-size: 25px;
+        }
+
+        .adrs , .cnt{
+          font-weight: bold;
+        }
+
+
+        #map-container {
+            position: relative;
+            display: inline-block;
+        }
+
+
+        #map {
+            height: 480px;
+            width: 800px;
+            margin-top: 50px;
+            margin-left: 300px;
+            border-style: solid;
+            border-color: rgba(175, 175, 175, 0.046);
+            border-width: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.487), 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .mapa{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+         /* fadein */
+
+         .fade {
+                opacity: 0;
+                transition: opacity 1.5s ease-out;
+        }
+
+        .fade-in {
+                opacity: 1;
+        }
+
+        /* slide  */
+
+                /* Inițial, ascund containerele în afara ecranului */
+        .slide-left {
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: transform 2s ease-out, opacity 1s ease-out;
+        }
+
+        .slide-right {
+            transform: translateX(100%);
+            opacity: 0;
+            transition: transform 2s ease-out, opacity 1s ease-out;
+        }
+
+        /* Când elementele devin vizibile */
+        .show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .tpo:hover{
+            color: rgb(250, 237, 212);
+            font-weight: 400;
+        }
+
+        .contct:hover{
+            background-color: rgba(255, 255, 255, 0.044) ;
+
+        }
+
+        .contact:hover {
+            transform: scale(1.01);
+            }
+
+
+
+      .contct:hover {
+        background-color: rgba(255, 255, 255, 0.044);
+        transform: scale(1.03);
+      }
+
+      .hov:hover{
+            color: rgb(250, 237, 212);
+            transform: scale(1.03);
+        }
+
+        .tpo:hover {
+        color: rgb(250, 237, 212);
+        font-weight: 400;
+        transform: scale(1.03);
+      }
+
+      .contct:hover {
+        background-color: rgba(255, 255, 255, 0.044);
+        transform: scale(1.03);
+      }
+
+      .hov:hover{
+            color: rgb(250, 237, 212);
+            transform: scale(1.03);
+        }
+
+        .logo:hover{
+            transform:scale(1.03);
+        }
+
+        
+
+
+        @media only screen and (max-width: 768px) {
+
+          body{
+          margin: 0px;
+          padding: 0px;
+          /* background: linear-gradient(to left, rgb(202, 210, 225), rgb(248, 241, 209)); */
+          background-image: url(imgs/imageg3.jpeg);
+          background-size: cover; 
+          background-position:center; 
+          background-repeat: no-repeat; 
+      }
+
+      .header{
+        background-color: rgba(75, 75, 75, 0.984);
+      }
+
+      .menu-icon{
+            display: block;
+        }
+
+        .menu{
+            display: block;
+        }
+
+
+        .opt{
+            display: none;
+        }
+
+        .tpo{
+            color:white;
+            padding-left:80px;
+            padding-right: 60px;
+            white-space: nowrap;
+            font-family: 'Nirmala UI';
+            font-size: 22px;
+            text-decoration: none;
+        }
+
+        .menu-icon {
+                    font-size: 35px;
+                    cursor: pointer;
+                    padding-top: 0px;
+                    padding-left: 4px;
+                    padding-bottom: 4px;
+                    padding-right: 4px;
+                    background-color: rgba(255, 255, 255, 0.2) ;
+                    color:rgb(250, 237, 212);
+                    position: fixed;
+                    top: 25px;
+                    right: 20px;
+                    z-index: 50;
+                    display: block;
+                }
+
+                /* Stilul pentru meniul ascuns */
+                .menu {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    background-color:rgba(0, 0, 0, 0.886) ;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 60px;
+                    display: block;
+                    z-index: 10000;
+                }
+
+                .menu a {
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-size: 23px;
+                    color:rgb(250, 237, 212);                   
+                    display: block;
+                    font-family: 'Poppins';
+                    transition: 0.3s;
+                    z-index: 10000;
+                }
+
+                .menu a:hover {
+                    background-color: rgba(53, 102, 52, 0.1);
+                }
+
+                /* Stilul pentru când meniul este deschis */
+                .menu.open {
+                    width: 250px;
+                    z-index: 10000;
+                }
+
+                .logo{
+                        font-family: 'Poppins';
+                        color:rgb(250, 237, 212);
+                        font-size: 30px;
+                        font-weight:bold ;
+                        padding-left:10px;
+                        padding-top: 30px;
+                        
+                    }
+                    .contct{
+                        margin: 10px;
+                        padding: 10px;
+                        background-color: rgba(255, 255, 255, 0.143) ;
+                        border: none;
+                        text-decoration: none;
+                        display: none;
+                    }
+
+
+        .contct{
+            display: none;
+        }
+
+        .mesajb{
+            display: none;
+        }
+
+        /* 1 */
+
+        .fs{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 120px;  
+          padding-left:0px;   
+        }
+
+
+        .contact{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(213, 213, 213, 0.443);
+          padding: 50px;
+          padding-top: 20px;
+          border-radius: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.487), 0 8px 15px rgba(0, 0, 0, 0.2);
+          margin-top: 40px;
+        }
+
+        .inf{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-family: 'Abhaya Libre', serif ;;
+          row-gap: 20px;
+          font-size: 40px;    
+          padding-bottom: 60px;      
+        }
+
+        .nr{
+          font-size: 25px;
+          text-decoration: none;
+        }
+
+        .nrr{
+          margin-left: 25px;
+          font-size: 25px;
+          text-decoration: none;
+          font-family: 'Inter';
+          font-weight: lighter;
+
+        }
+
+      
+
+
+        .fb{
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .nmfb{
+          margin-left: 10px;
+          }
+        
+
+        .adrs,.adrss{
+          font-family: 'Abhaya Libre', serif ;
+          padding-bottom: 20px;
+          font-size: 40px;
+        }
+
+
+        
+
+        .adrss , .nr , .nmfb{
+          color: rgb(44, 44, 44);
+          font-family:'Inter', serif ;
+          font-size: 25px;
+        }
+
+        .adrs , .cnt{
+          font-weight: bold;
+        }
+
+
+        #map-container {
+            position: relative;
+            display: inline-block;
+            opacity:0.1;
+            z-index: 1;
+        }
+
+
+        #map {
+            height: 280px;
+            width: 330px;
+            margin-top: 30px;
+            margin-left: 0px;
+            border-style: solid;
+            border-color: rgba(175, 175, 175, 0);
+            border-width: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.487), 0 8px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 250px;
+            z-index: 1;
+        }
+
+        .mapa{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          z-index: 1;
+        }
+
+
+            
+          
+        }
+
+
+
+       
+
+
+      
+        
+    </style>
+</head>
+<body>
+<div class="header fade">
+    <a href="index.html" class="logo fade">MasterBuild</a>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div id="mobileMenu" class="menu">
+                <a href="galerie.html" class="leg">Galerie</a>
+                <a href="caracteristici.html" class="leg">Caracteristici</a>
+                <a href="informatii-tehnice.html" class="leg">Informatii Tehnice</a>
+                <a href="localizare.html" class="leg">Localizare</a>
+                <a href="contact.html" class="leg">Contact</a>
+    </div>
+
+    <div class="opt fade">
+        <a href="galerie.html" class="tpo">Galerie</a>
+        <a href="caracteristici.html" class="tpo">Caracteristici</a>
+        <a href="informatii-tehnice.html" class="tpo">Informatii Tehnice</a>
+        <a href="localizare.html" class="tpo">Localizare</a>
+    </div>
+        <a href="contact.html" class="contct fade">
+            <div class="mesajb">Contact</div>
+        </a>
+    </div>  
+</div>
+<div class="fs">
+    <div class="contact">
+      <div class="inf fade">
+        <div class="cnt">Contacteaza-ne</div>
+        <a class="nr"   href="tel:+0729006486">
+          <i class="fas fa-phone"></i><i class="nrr">+0729006486</i> 
+        </a>
+        <a class="fb" href="https://www.facebook.com/Masterbuild33/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo Square" width="40" height="40">
+          <h9 class="nmfb">Master Build</h9>
+        </a>
+      </div>
+      <div class="adrs fade">Adresa</div>
+      <div class="adrss fade">Strada Toamnei</div>  
+    </div class="mapa">
+        <div class="map-container fade">
+          <div id="map">
+              <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+              <script>
+                  var map = L.map('map').setView([44.404238, 25.988539], 15); // Strada Toamnei, București
+              
+                  // Adaugă un tile layer (imaginea hărții)
+                  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  }).addTo(map);
+              
+                  // Adaugă un marker pe Strada Toamnei
+                  var marker = L.marker([44.404238, 25.988539], { icon: L.icon({ iconUrl: 'imgs/marker.png', iconSize: [42, 42] }) }).addTo(map)
+                      .bindPopup('Strada Toamnei, București')
+                      .openPopup();
+              </script>
+          </div>
+        </div>
+</div> 
+
+     <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add("fade-in");
+                  } else {
+                      entry.target.classList.remove("fade-in");
+                  }
+              });
+          });
+  
+          const fadeElements = document.querySelectorAll('.fade');
+          fadeElements.forEach((el) => observer.observe(el));
+  
+      });
+      document.addEventListener("DOMContentLoaded", function() {
+      const slideElements = document.querySelectorAll('.slide-left, .slide-right');
+  
+      function checkPosition() {
+          slideElements.forEach((el) => {
+              const rect = el.getBoundingClientRect();
+              const inView = rect.top < window.innerHeight && rect.bottom > 0;
+  
+              if (inView) {
+                  el.classList.add('show');
+              }
+          });
+      }
+  
+      window.addEventListener('scroll', checkPosition);
+      checkPosition(); // rulează la început pentru a verifica pozițiile inițiale
+  });
+
+  function toggleMenu() {
+    var menu = document.getElementById("mobileMenu");
+    if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+    } else {
+        menu.classList.add("open");
+    }
+}
+  
+  </script>
+   
+ 
+   
+</body>
+      
+</html>

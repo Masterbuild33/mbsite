@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatii Tehnice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background:linear-gradient(to left, rgb(202, 210, 225), rgb(248, 241, 209));
+        }
+
+        html, body {
+    overflow-x: hidden;
+}
+
+
+        .mobile{
+            display: none;
+        }
+
+        .menu-icon{
+            display: none;
+        }
+
+        .menu{
+            display: none;
+        }
+        
+
+        
+        .header{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            background-color: rgb(100, 100, 100);
+            width: 1912px;
+            height: 120px;    
+            position: fixed;   
+            top: 0;
+            z-index: 100;
+  
+        }
+        .opt{
+            display: flex;
+            flex-direction: row;
+            padding-left:   50px;
+            padding-right: 120px;
+            padding-top: 40px;
+        }
+
+        .tpo{
+            color:white;
+            padding-left:140px;
+            padding-right: 60px;
+            white-space: nowrap;
+            font-family: 'Nirmala UI';
+            font-size: 22px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            
+        }
+
+        .carate{
+            color: rgb(252, 233, 196);
+        }
+
+        .logo{
+            font-family: 'Poppins';
+            color:rgb(250, 237, 212);
+            font-size: 35px;
+            font-weight:bold ;
+            padding-left:60px;
+            padding-top: 30px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+
+        .contct{
+            margin-top: 28px;
+            padding: 15px 30px 15px 30px;
+            background-color: rgba(255, 255, 255, 0.143) ;
+            border: none;
+            text-decoration: none;
+            height: 28px;
+        }
+
+        .mesajb{
+            font-family:'Inter';
+            color:rgb(250, 237, 212);
+            font-size: 22px;
+        }
+
+
+        /* 1 */
+
+        .first{
+            display: flex;
+            flex-direction: row;
+            padding-top: 230px;
+        }
+
+        .text{
+            width: 1900px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            background-color: rgba(150, 150, 150, 0.069);
+            border-radius: 30px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px; 
+            padding-top: 150px;
+            padding-bottom: 150px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .text22{
+            width: 1900px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            background-color: rgba(150, 150, 150, 0.069);
+            border-radius: 30px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .tlt{
+            font-family: 'Inter';
+            font-size: 48px;
+            transition: transform 0.3s ease;
+        }
+
+        .sbs{
+            font-family: 'Inter';
+            font-size: 30px;
+            text-align: center;
+            width: 750px;
+            padding-top: 30px;
+        }
+        .poza1{
+            height: 400px;
+            width: 500px;
+            margin-left: 30px;
+            margin-right:100px ;
+            margin-top: 100px;
+            padding-left: 100px;
+        }
+
+        .text:hover,.text22:hover,.text3:hover,.poza1:hover, .text4:hover,.tlt,.sbs{
+            transform: scale(1.01);
+        }
+
+        .text,.text22,.text3,.poza1.text4,.tlt,.sbs{
+            transition: transform 0.3s ease;
+        }
+
+
+
+        /* 2 */
+
+        .second{
+            display: flex;
+            flex-direction: row-reverse;
+            padding-top: 180px;
+        }
+
+        /* 3 */
+
+        .third{
+            display: flex;
+            flex-direction: row;
+            padding-top: 180px;
+        }
+
+        .text3{
+            width: 1900px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            background-color: rgba(150, 150, 150, 0.069);
+            padding-top: 150px;
+            padding-bottom: 150px;
+            border-radius: 30px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.2);
+            /* border-style: solid; */
+            /* border-color: rgba(0, 0, 0, 0.182); */
+            /* border-width: 1px; */
+            transition: transform 0.3 s ease;
+
+        }
+
+
+
+        .tlt3{
+            font-family: 'Inter';
+            font-size: 48px;
+            width: 900px;
+            text-align: center;
+        }
+
+        /* 4 */
+
+        .forth{
+            display: flex;
+            flex-direction: row;
+            padding-top: 190px;
+        }
+
+        .text4{
+            width: 1500px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            background-color: rgba(150, 150, 150, 0.069);
+            padding-top: 130px;
+            padding-bottom: 140px;
+            margin-left: 200px;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tlt4{
+            font-family: 'Inter';
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .sbs4{
+            font-family: 'Inter';
+            font-size: 30px;
+            text-align: center;
+            width: 750px;
+            padding-top: 30px;
+            width: 1400px;
+        }
+
+
+        /* footer */
+
+
+        .info{
+            display: flex;
+            flex-direction:row;
+            padding-top: 130px;
+            padding-left: 130px;
+            transition: transform 0.3s ease;
+            
+        }
+
+
+        .fotinf{
+            font-family: 'Abhaya Libre', serif;
+            font-size: 33px;
+            text-decoration: none;
+            color: rgb(125, 125, 125);
+            padding-right: 80px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 390px;
+        }
+        
+        .num{
+            font-family: 'Abhaya Libre', serif;
+            font-size: 33px;
+            text-decoration: none;
+            color: rgb(64, 64, 64);
+        }
+
+        .tel{
+            font-family: 'Abhaya Libre', serif;
+            font-size: 33px;
+            text-decoration: none;
+            color: rgb(64, 64, 64);
+            text-decoration: none;
+        }
+
+        .refe{
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .refe:hover,.btn:hover{
+            transform: scale(1.03);
+        }
+
+        .fotinf:hover{
+            color: rgb(81, 81, 81);
+            scale: 1.04;
+        }
+
+        .bar{
+            height: 40px;
+            background-color: rgb(175, 175, 175);
+            width: 1897px;
+            margin-top: 160px;
+        }
+
+        .img{
+                        height: 80px;
+                        width: 80px; 
+                        margin-left: -10px;
+                        margin-top: -6px;
+                    }
+
+                    .fab{
+                height: 60px;
+                width: 60px;
+                padding-top: 20px;
+                transition: transform 0.3s ease;
+
+            }
+
+            /* .btn{
+                            border-radius: 90px;
+                            height: 60px;
+                            width: 60px;
+                            margin-top: 20px;
+                            background-color:  rgb(45, 77, 255);
+                            border: solid;
+                            border-color: rgb(0, 0, 0);
+                            border-width: 1px;
+                            transition: transform 0.3s ease;
+                            }   */
+
+            .btns{
+                        padding-top: 50px;
+                }
+
+                /* fadein */
+
+                .fade {
+                opacity: 0;
+                transition: opacity 1.5s ease-out;
+        }
+
+        .fade-in {
+                opacity: 1;
+        }
+
+        /* slide  */
+
+                /* Inițial, ascund containerele în afara ecranului */
+        .slide-left {
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: transform 2s ease-out, opacity 1s ease-out;
+        }
+
+        .slide-right {
+            transform: translateX(100%);
+            opacity: 0;
+            transition: transform 2s ease-out, opacity 1s ease-out;
+        }
+
+        /* Când elementele devin vizibile */
+        .show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        #topBtn{
+            display: none;
+        }
+
+        .titlu{
+            display: none;
+        }
+
+        .hov:hover{
+            color: rgb(250, 237, 212);
+            transform: scale(1.03);
+        }
+
+        .logo:hover{
+            transform:scale(1.03);
+        }
+
+        .contct:hover{
+            background-color: rgba(255, 255, 255, 0.044) ;
+            transform: scale(1.03);
+            
+
+        }
+
+
+
+        @media only screen and (max-width: 768px) {
+            body{
+            margin: 0px;
+            padding: 0px;
+            background:linear-gradient(to left, rgb(202, 210, 225), rgb(248, 241, 209));
+        }
+
+        .titlu{
+            display: block;
+            padding-top: 140px;
+            text-align: center;
+            font-size: 40px;
+            font-family:'Inter';
+            color:rgb(107, 107, 107) ;
+            background-color:rgba(250, 237, 212, 0.374);
+            padding-bottom: 40px;
+            font-weight: bold;
+        }
+        
+        .header{
+            display: flex;
+            flex-direction: rows;
+            position: absolute;
+            z-index:3;
+            background-color: rgb(100, 100, 100);
+            width:100%;
+            height: 120px;    
+            /* position: fixed;         */
+        }
+        .opt{
+            display: flex;
+            flex-direction: row;
+            padding-left:   50px;
+            padding-right: 120px;
+            padding-top: 40px;
+        }
+
+        .tpo{
+            color:white;
+            padding-left:140px;
+            padding-right: 60px;
+            white-space: nowrap;
+            font-family: 'Nirmala UI';
+            font-size: 22px;
+            text-decoration: none;
+        }
+
+        .carate{
+            color: rgb(252, 233, 196);
+        }
+
+        .opt{
+                        display: none;
+                    }
+
+                    .contct{
+                        margin: 10px;
+                        padding: 10px;
+                        background-color: rgba(255, 255, 255, 0.143) ;
+                        border: none;
+                        text-decoration: none;
+                        display: none;
+                    }
+
+
+          /* Stilul pentru butonul de meniu */
+          .menu-icon {
+                    font-size: 35px;
+                    cursor: pointer;
+                    padding-top: 0px;
+                    padding-left: 4px;
+                    padding-bottom: 4px;
+                    padding-right: 4px;
+                    background-color: rgba(255, 255, 255, 0.2) ;
+                    color:rgb(250, 237, 212);
+                    position: absolute;
+                    top: 25px;
+                    right: 20px;
+                    z-index: 10;
+                    display: block;
+
+                }
+
+
+                /* Stilul pentru meniul ascuns */
+                .menu {
+                    height: 100%;
+                    width: 0px;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    background-color:rgba(0, 0, 0, 0.886) ;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 60px;
+                    display: block;
+                }
+
+                .menu a {
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-size: 23px;
+                    color:rgb(250, 237, 212);                   
+                    display: block;
+                    font-family: 'Poppins';
+                    transition: 0.3s;
+                }
+
+                .menu a:hover {
+                    background-color: rgba(53, 102, 52, 0.1);
+                }
+
+                /* Stilul pentru când meniul este deschis */
+                .menu.open {
+                    width: 250px;
+                }
+
+        .logo{
+            font-family: 'Poppins';
+                        color:rgb(250, 237, 212);
+                        font-size: 30px;
+                        font-weight:bold ;
+                        padding-left:10px;
+                        padding-top: 30px;    
+        }
+
+        .contct{
+            margin-top: 28px;
+            padding: 15px 30px 15px 30px;
+            background-color: rgba(255, 255, 255, 0.143) ;
+            border: none;
+            text-decoration: none;
+            height: 28px;
+        }
+
+        .mesajb{
+            font-family:'Inter';
+            color:rgb(250, 237, 212);
+            font-size: 22px;
+        }
+
+
+        /* 1 */
+
+        .first{
+            display: flex;
+            flex-direction: column;
+            padding-top: 70px;
+        }
+
+        .text{
+            width: 372px;
+            margin-left: 10px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            padding: 0px;
+            background-color: rgba(70, 70, 70, 0);
+        }
+
+        .tlt{
+            font-family: 'Inter';
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+
+        .sbs{
+            font-family: 'Inter';
+            font-size: 20px;
+            text-align: center;
+            width: 350px;
+            padding: 0px;
+            margin-bottom: 13px;
+        }
+        .poza1{
+            height: 250px;
+            width: 250px;
+           margin: 0px;
+           padding: 0px;
+            align-self: center;
+        }
+
+        /* 2 */
+
+        .second{
+            display: flex;
+            flex-direction: column;
+            padding-top: 70px;
+        }
+
+        /* 3 */
+
+        .third{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text3{
+            width: 372px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            background-color: rgba(70, 70, 70, 0);
+            padding: 0px;
+            padding-top: 20px;
+            border-radius: 15px;    
+        }
+
+        .tlt3{
+            font-family: 'Inter';
+            font-size: 30px;
+            width: 390px;
+            text-align: center;
+        }
+
+        /* 4 */
+
+        .forth{
+            display: flex;
+            flex-direction: row;
+            padding-top: 100px;
+        }
+
+        ul {
+    padding-left: 0px;
+    list-style-type:none; /* poți schimba în circle, square sau none pentru alte stiluri */
+}
+
+li {
+    margin-bottom: 40px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+        .text4{
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            background-color: rgba(70, 70, 70, 0);
+            font-size: 30px;
+            margin: 0px;
+            padding-left:170px;
+            margin-left: 13px;
+            height: 720px;
+            
+
+        }
+
+        .tlt4{
+            font-family: 'Inter';
+            font-size: 30px;
+            text-align: center;
+            margin-top: -110px;
+            margin-left: -160px;
+        }
+
+        .sbs4{
+            font-family: 'Inter';
+            font-size: 20px;
+            text-align: center;
+            width: 350px;
+            margin-bottom: 13px;
+            margin: 0px;
+            padding: 0px;
+            margin-left: -160px;
+        }
+
+        .icons{
+            font-size: 30px;
+
+        }
+
+        li {
+            position: relative;
+            list-style: none;
+            margin-bottom: 20px;
+            text-align: center; /* Opțional, pentru a centra icon-ul și textul */
+        }
+
+        li i {
+            display: block; /* Face icon-ul să apară pe un rând nou */
+            font-size: 30px; /* Reglează dimensiunea icon-ului */
+            padding-top: 5px;
+        }
+
+        .mobile{
+            display: block;
+        }
+
+        /* Slider Container */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-left: -4px;
+    margin-bottom: 80px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Stiluri pentru text și imagini */
+.text, .text3 {
+    width: 372px;
+    height: 330px;
+    margin-left: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color: rgba(70, 70, 70, 0);
+}
+
+.tlt, .tlt3 {
+    font-family: 'Inter';
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.sbs {
+    font-family: 'Inter';
+    font-size: 20px;
+    text-align: center;
+    width: 350px;
+    padding: 0px;
+    margin-bottom: 13px;
+}
+
+.pozemobile {
+    width: auto;
+    height: 250px;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    align-content: center;
+    padding-left: 25px;
+}
+
+
+/* Butoane de navigare */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(170, 170, 170, 0);
+    color:rgb(69, 69, 69); /* Săgeata galbenă */
+    border: none;
+    padding: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    font-size: 40px;
+    z-index: 10;
+    border-radius: 90px;
+}
+
+.prev {
+    left:20px;
+}
+
+.next {
+    right: 11px;
+}
+
+
+
+
+        /* footer */
+
+
+        .info{
+                        display: flex;
+                        flex-direction:row;
+                        padding-top: 130px;
+                        padding-left: 10px;
+                    }
+
+                    .btns{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        row-gap: 20px;
+                        margin-left: 20px;
+                        margin-top: -50px;
+                    }
+
+
+                    .fotinf{
+                        font-family: 'Abhaya Libre', serif;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: rgb(125, 125, 125);
+                    }
+
+                    .contact{
+                        
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 0px;
+                    }
+                    
+                    .num{
+                        font-family: 'Abhaya Libre', serif;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: rgb(99, 99, 99);
+                    }
+
+                    .tel{
+                        font-family: 'Abhaya Libre', serif;
+                        font-size: 22px;
+                        text-decoration: none;
+                        margin-top: 15px;
+                        color: rgb(125, 125, 125);
+                    }
+
+                    .bar{
+                        height: 40px;
+                        background-color: rgb(175, 175, 175);
+                        width:393px;
+                        margin-top: 70px;
+                    }
+
+                    .img{
+                        height: 50px;
+                        width: 50px; 
+                        margin-left: 5px;
+                        margin-top: 5px;
+                        
+                        
+                    }
+
+                    .btn{
+                        border-radius: 90px;
+                        height: 60px;
+                        width: 60px;
+                        margin-top: 0px;
+
+                        }
+
+        #topBtn {
+            display: block;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(128, 128, 128, 0.448); /* Gri transparent */
+            color:rgb(250, 237, 212); /* Săgeata galbenă */
+            font-size: 24px;
+            border: none;
+            border-radius: 50%; /* Rotund */
+            cursor: pointer;
+            z-index: 300; /* Peste toate elementele */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .web{
+            display: none;
+        }
+
+        .pozemobile1{
+            height: 250px;
+            width: 250px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+
+
+
+
+
+
+
+
+        }
+
+
+       
+
+        
+        
+        
+    </style>
+</head>
+<body id="body">
+<button onclick="scrollToTop()" id="topBtn">↑</button>
+<h1 class="titlu">Informatii Tehnice</h1>
+<div class="header fade">
+                        <a href="index.html" class="logo fade">MasterBuild</a>
+                        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                        <div id="mobileMenu" class="menu">
+                            <a href="galerie.html" class="leg">Galerie</a>
+                            <a href="caracteristici.html" class="leg">Caracteristici</a>
+                            <a href="informatii-tehnice.html" class="leg">Informatii Tehnice</a>
+                            <a href="localizare.html" class="leg">Localizare</a>
+                            <a href="contact.html" class="leg">Contact</a>
+                        </div>
+
+                        <div class="opt fade">
+                            <a href="galerie.html" class="tpo hov">Galerie</a>
+                            <a href="caracteristici.html" class="tpo hov">Caracteristici</a>
+                            <a href="informatii-tehnice.html" class="tpo carate">Informatii Tehnice</a>
+                            <a href="localizare.html" class="tpo hov">Localizare</a>
+                        </div>
+                            <a href="contact.html" class="contct fade">
+                                <div class="mesajb">Contact</div>
+                            </a>
+                        </div>  
+</div>
+<div class="web">
+    <div class="first">
+        <div class="text fade">
+            <div class="tlt fade">
+                Confort Complet cu Toate Utilitățile Incluse
+            </div>
+            <div class="sbs fade">
+                Vila individuala este livrată complet echipată cu toate utilitățile necesare pentru un confort deplin: canalizare, drum asfaltat, curent electric, apă, gaz, centrală termică și acces la internet prin cablu.
+            </div>
+        </div>
+        <img  class="poza1 fade" src="imgs/online.png" alt="">
+    </div>
+    <div class="second">
+        <div class="text22 fade">
+            <div class="tlt fade">
+                Spațiu Exterior Funcțional cu Parcare și Amenajare
+            </div>
+            <div class="sbs fade">
+                Curtea, cu o suprafață generoasă de 180 mp, este amenajată cu dale de beton și gazon, creând un spațiu exterior atractiv și funcțional. De asemenea, include și o zonă de parcare dedicată, oferind un plus de confort și accesibilitate.        
+            </div>
+        </div>
+        <img  class="poza1 fade" src="imgs/garage.png" alt="">
+    </div>
+    <div class="third">
+        <div class="text3 fade">
+            <div class="tlt3 fade">
+                Personalizează Fiecare Detaliu al Finisajelor Interioare
+            </div>
+            <div class="sbs fade">
+                Finisajele și dotările interioare sunt personalizabile, oferindu-vă posibilitatea de a alege fiecare detaliu, de la parchet, gresie, faianță, la obiecte sanitare și uși, conform preferințelor dumneavoastră.        </div>
+        </div>
+        <img  class="poza1 fade" src="imgs/customization.png" alt="">
+    </div>
+    
+    <div class="forth"></div>
+        <div class="text4">
+            <div class="tlt4 fade">
+                Tehnologii Avansate și Materiale de Calitate
+            </div>
+            <div class="sbs4 fade">
+                Ferestrele sunt dotate cu geamuri Tripan DECEUNINCK din PVC, cu 6 camere și 3 garnituri, asigurând o izolare termică și fonică excelentă.
+                Locuința este echipată cu prize modulare Panasonic, WC suspendat de calitate germană și acoperiș din tablă Lindab Bilka. Încălzirea în pardoseală, atât la parter cât și la etajul 1, asigură confort termic optim pe timpul iernii. Fațadele sunt finisate cu piatră naturală, tencuială decorativă cu silicon și sunt izolate cu poliester de 10 cm grosime și EPS 80, oferind un aspect elegant și o izolare termică superioară.
+                Mansarda este izolată eficient cu celuloză de 12 cm grosime și folie Rothoblaas, garantând un climat interior confortabil și eficiență energetică ridicată. Toate aceste detalii reflectă atenția la calitatea construcției, transformând vila într-o locuință ideală pentru confortul și bunăstarea dumneavoastră.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile">
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="first slide">
+                <div class="text">
+                    <div class="tlt">Confort Complet cu Toate Utilitățile Incluse</div>
+                    <div class="sbs">Vila individuala este livrată complet echipată cu toate utilitățile necesare pentru un confort deplin: canalizare, drum asfaltat, curent electric, apă, gaz, centrală termică și acces la internet prin cablu.</div>
+                </div>
+                <img class="pozemobile1" src="imgs/online.png" alt="Poza 1">
+            </div>
+    
+            <div class="second slide">
+                <div class="text">
+                    <div class="tlt">Spațiu Exterior Funcțional cu Parcare și Amenajare</div>
+                    <div class="sbs">Curtea, cu o suprafață generoasă de 180 mp, este amenajată cu dale de beton și gazon, creând un spațiu exterior atractiv și funcțional. De asemenea, include și o zonă de parcare dedicată, oferind un plus de confort și accesibilitate.</div>
+                </div>
+                <img class="pozemobile" src="imgs/garage.png" alt="Poza 2">
+            </div>
+    
+            <div class="first slide">
+                <div class="text">
+                    <div class="tlt">Personalizează Fiecare Detaliu al Finisajelor Interioare</div>
+                    <div class="sbs">Finisajele și dotările interioare sunt personalizabile, oferindu-vă posibilitatea de a alege fiecare detaliu, de la parchet, gresie, faianță, la obiecte sanitare și uși, conform preferințelor dumneavoastră.</div>
+                </div>
+                <img class="pozemobile" src="imgs/customization.png" alt="">
+            </div>
+        </div>
+    
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <div class="text4">
+        <div class="tlt4 fade">
+            Tehnologii Avansate și Materiale de Calitate
+        </div>
+        <div class="sbs4 fade">
+            <ul>
+                <li>
+                    Ferestre dotate cu geamuri Tripan DECEUNINCK din PVC, 6 camere și 3 garnituri, asigurând izolare termică și fonică excelentă.
+                    <i class="fi fi-rr-window-frame icons"></i>
+                </li>
+                <li>
+                    Prize modulare Panasonic și WC suspendat de calitate germană.
+                    <i class="fi fi-rr-toilet icons"></i>
+                </li>
+                <li>
+                    Acoperiș din tablă Lindab Bilka.
+                    <i class="fi fi-rs-home icons"></i>
+                </li>
+                <li>
+                    Încălzire în pardoseală la parter și etajul 1, pentru confort termic optim pe timp de iarnă.
+                    <i class="fi fi-rs-floor-layer icons"></i>
+                </li>
+                <li>
+                    Fațade finisate cu piatră naturală și tencuială decorativă siliconică, izolate cu poliester de 10 cm și EPS 80.
+                    <i class="fi fi-rs-block-brick icons"></i>
+                </li>
+                <li>
+                    Mansardă izolată cu celuloză de 12 cm și folie Rothoblaas, garantând eficiență energetică și confort.
+                    <i class="fi fi-rr-heat icons"></i>
+                </li>
+                <li>Toate detaliile reflectă o construcție de calitate, oferind o locuință ideală pentru confort și bunăstare.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer"></div>
+    <div class="allfooter fade">
+        <div class="info fade">
+            <div class="btns">
+                <a class="fotinf" href="galerie.html">Galerie</a>
+                <a class="fotinf" href="caracteristici.html">Caracteristici</a>
+                <a class="fotinf" href="informatii-tehnice.html">Informatii Tehnice</a>
+                <a class="fotinf" href="localizare.html">Localizare</a>
+            </div>
+            <div class="contact fade">
+                <a class="num" href="contact.html">Contact</a>
+                <a class="refe"   href="tel:+0729006486">
+                    <i class="tel">0729006486</i>
+                </a>
+                <a href="https://www.facebook.com/Masterbuild33/" class="btn fade">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo Square" class="fab">
+                </a>
+            </div>
+        </div>
+        <div class="bar fade"></div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                } else {
+                    entry.target.classList.remove("fade-in");
+                }
+            });
+        });
+
+        const fadeElements = document.querySelectorAll('.fade');
+        fadeElements.forEach((el) => observer.observe(el));
+
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+    const slideElements = document.querySelectorAll('.slide-left, .slide-right');
+
+    function checkPosition() {
+        slideElements.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            const inView = rect.top < window.innerHeight && rect.bottom > 0;
+
+            if (inView) {
+                el.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkPosition);
+    checkPosition(); // rulează la început pentru a verifica pozițiile inițiale
+});
+
+
+function toggleMenu() {
+    var menu = document.getElementById("mobileMenu");
+    if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+    } else {
+        menu.classList.add("open");
+    }
+}
+
+
+ // Ascunde butonul la început
+ document.getElementById("topBtn").style.display = "none";
+
+// Afișează butonul doar după ce utilizatorul trece de prima secțiune
+window.onscroll = function () {
+  let secondSection = document.querySelector('.first').offsetTop;
+  if (window.pageYOffset > secondSection) {
+    document.getElementById("topBtn").style.display = "flex";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+};
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+let currentSlide = 0;
+let startX = 0;
+let isSwiping = false;
+
+function moveSlide(step) {
+    const slides = document.querySelectorAll('.slide');
+    const slider = document.getElementById('slider');
+    const totalSlides = slides.length;
+
+    currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+    
+    const offset = -currentSlide * 100; // Calculăm deplasarea
+    slider.style.transform = `translateX(${offset}%)`;
+}
+
+// Detectarea mișcării degetului
+const sliderContainer = document.querySelector('.slider-container');
+
+sliderContainer.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX; // Coordonata inițială a atingerii
+    isSwiping = true;
+});
+
+sliderContainer.addEventListener('touchmove', (e) => {
+    if (!isSwiping) return;
+    const currentX = e.touches[0].clientX;
+    const diffX = startX - currentX; // Diferența dintre pozițiile degetului
+
+    // Condiții pentru swipe (stânga sau dreapta)
+    if (diffX > 50) { // swipe la stânga
+        moveSlide(1);
+        isSwiping = false;
+    } else if (diffX < -50) { // swipe la dreapta
+        moveSlide(-1);
+        isSwiping = false;
+    }
+});
+
+sliderContainer.addEventListener('touchend', () => {
+    isSwiping = false; // Resetare la terminarea atingerii
+});
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
